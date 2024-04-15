@@ -1,0 +1,180 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SFAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+loadets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 15 2024 11:53:17[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=246d8h (149208) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=00034700 vaddr=3ffbdb60 size=04afch ( 19196) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00039204 vaddr=40080000 size=06e14h ( 28180) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=83ef8h (540408) map[0m
+[0;32mI (359) esp_image: segment 4: paddr=000c3f20 vaddr=40086e14 size=12440h ( 74816) load[0m
+[0;32mI (402) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (402) boot: Disabling RNG early entropy source...[0m
+[0;32mI (413) cpu_start: Multicore app[0m
+[0;32mI (422) cpu_start: Pro cpu start user code[0m
+[0;32mI (422) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (422) cpu_start: Application information:[0m
+[0;32mI (425) cpu_start: Project name:     gatt_server[0m
+[0;32mI (430) cpu_start: App version:      1[0m
+[0;32mI (435) cpu_start: Compile time:     Apr 15 2024 11:53:03[0m
+[0;32mI (441) cpu_start: ELF file SHA256:  69f14e21e...[0m
+[0;32mI (446) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (451) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (456) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (461) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (466) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (473) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (479) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (485) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (491) heap_init: At 3FFC7260 len 00018DA0 (99 KiB): DRAM[0m
+[0;32mI (497) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (510) heap_init: At 40099254 len 00006DAC (27 KiB): IRAM[0m
+[0;32mI (518) spi_flash: detected chip: generic[0m
+[0;32mI (521) spi_flash: flash io: dio[0m
+[0;33mW (525) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (538) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (549) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (554) main_task: Started on CPU0[0m
+[0;32mI (564) main_task: Calling app_main()[0m
+[0;32mI (594) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (594) BTDM_INIT: Bluetooth MAC: b0:a7:32:2a:c3:a2[0m
+[0;32mI (594) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1004) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 0[0m
+[0;32mI (1014) main_task: Returned from app_main()[0m
+[0;32mI (1024) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 40[0m
+[0;32mI (1024) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 1[0m
+[0;32mI (1044) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 40[0m
+[0;32mI (1044) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40[0m
+[0;32mI (1044) GATTS_DEMO: the gatts demo char length = 3[0m
+[0;32mI (1054) GATTS_DEMO: prf_char[0] =11[0m
+[0;32mI (1054) GATTS_DEMO: prf_char[1] =22[0m
+[0;32mI (1054) GATTS_DEMO: prf_char[2] =33[0m
+[0;32mI (1064) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 44[0m
+[0;32mI (1074) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40[0m
+[0;32mI (1074) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 44[0m
+[0;32mI (1084) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 46, service_handle 44[0m
+[0;32mI (1094) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 47, service_handle 44[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 15 2024 11:53:17[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=246d8h (149208) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=00034700 vaddr=3ffbdb60 size=04afch ( 19196) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00039204 vaddr=40080000 size=06e14h ( 28180) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=83ef8h (540408) map[0m
+[0;32mI (359) esp_image: segment 4: paddr=000c3f20 vaddr=40086e14 size=12440h ( 74816) load[0m
+[0;32mI (402) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (402) boot: Disabling RNG early entropy source...[0m
+[0;32mI (413) cpu_start: Multicore app[0m
+[0;32mI (422) cpu_start: Pro cpu start user code[0m
+[0;32mI (422) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (422) cpu_start: Application information:[0m
+[0;32mI (425) cpu_start: Project name:     gatt_server[0m
+[0;32mI (430) cpu_start: App version:      1[0m
+[0;32mI (435) cpu_start: Compile time:     Apr 15 2024 11:53:03[0m
+[0;32mI (441) cpu_start: ELF file SHA256:  69f14e21e...[0m
+[0;32mI (446) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (451) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (456) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (461) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (466) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (473) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (479) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (485) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (491) heap_init: At 3FFC7260 len 00018DA0 (99 KiB): DRAM[0m
+[0;32mI (497) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (510) heap_init: At 40099254 len 00006DAC (27 KiB): IRAM[0m
+[0;32mI (518) spi_flash: detected chip: generic[0m
+[0;32mI (521) spi_flash: flash io: dio[0m
+[0;33mW (525) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (538) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (549) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (554) main_task: Started on CPU0[0m
+[0;32mI (564) main_task: Calling app_main()[0m
+[0;32mI (594) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (594) BTDM_INIT: Bluetooth MAC: b0:a7:32:2a:c3:a2[0m
+[0;32mI (594) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1004) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 0[0m
+[0;32mI (1004) main_task: Returned from app_main()[0m
+[0;32mI (1014) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 40[0m
+[0;32mI (1014) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 1[0m
+[0;32mI (1034) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 40[0m
+[0;32mI (1034) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40[0m
+[0;32mI (1034) GATTS_DEMO: the gatts demo char length = 3[0m
+[0;32mI (1044) GATTS_DEMO: prf_char[0] =11[0m
+[0;32mI (1044) GATTS_DEMO: prf_char[1] =22[0m
+[0;32mI (1054) GATTS_DEMO: prf_char[2] =33[0m
+[0;32mI (1054) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 44[0m
+[0;32mI (1064) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40[0m
+[0;32mI (1074) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 44[0m
+[0;32mI (1074) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 46, service_handle 44[0m
+[0;32mI (1084) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 47, service_handle 44[0m
+[0;32mI (1994) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote b0:a7:32:2b:8e:86:[0m
+[0;32mI (1994) GATTS_DEMO: CONNECT_EVT, conn_id 0, remote b0:a7:32:2b:8e:86:[0m
+[0;32mI (2134) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 32,latency = 0, timeout = 400[0m
+[0;32mI (3504) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (3504) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (3704) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 2, handle 43[0m
+[0;32mI (3704) GATTS_DEMO: GATT_WRITE_EVT, value len 2, value :[0m
+[0;32mI (3704) GATTS_DEMO: 01 00 [0m
+[0;32mI (3714) GATTS_DEMO: notify enable[0m
+[0;31mE (3714) BT_APPL: bta_gatts_indicate_handle, incorrect length[0m
+[0;32mI (3724) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (3784) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 3, handle 42[0m
+[0;32mI (3784) GATTS_DEMO: GATT_WRITE_EVT, value len 35, value :[0m
+[0;32mI (3784) GATTS_DEMO: 00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f [0m
+[0;32mI (3794) GATTS_DEMO: 10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f [0m
+[0;32mI (3804) GATTS_DEMO: 20 21 22 [0m

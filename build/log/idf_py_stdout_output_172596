@@ -1,0 +1,90 @@
+[1/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gatts_demo.c.obj
+C:/Users/KPC/Documents/programs/rtos/gatt_server/main/gatts_demo.c: In function 'gatts_profile_a_event_handler':
+C:/Users/KPC/Documents/programs/rtos/gatt_server/main/gatts_demo.c:471:70: warning: passing argument 5 of 'esp_ble_gatts_send_indicate' makes pointer from integer without a cast [-Wint-conversion]
+  471 |                                                 sizeof(notify_data), notify_data, false);
+      |                                                                      ^~~~~~~~~~~
+      |                                                                      |
+      |                                                                      uint8_t {aka unsigned char}
+In file included from C:/Users/KPC/Documents/programs/rtos/gatt_server/main/gatts_demo.c:37:
+C:/Users/KPC/esp/v5.2.1/esp-idf/components/bt/host/bluedroid/api/include/api/esp_gatts_api.h:493:68: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+  493 |                                       uint16_t value_len, uint8_t *value, bool need_confirm);
+      |                                                           ~~~~~~~~~^~~~~
+C:/Users/KPC/Documents/programs/rtos/gatt_server/main/gatts_demo.c: At top level:
+C:/Users/KPC/Documents/programs/rtos/gatt_server/main/gatts_demo.c:81:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   81 | static const char *TAG = "MPU";
+      |                    ^~~
+[2/10] Linking C static library esp-idf\main\libmain.a
+[3/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\KPC\Documents\programs\rtos\gatt_server\build\bootloader\esp-idf\esptool_py && C:\Users\KPC\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/KPC/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/KPC/Documents/programs/rtos/gatt_server/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable gatt_server.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/KPC/Documents/programs/rtos/gatt_server/build/gatt_server.bin
+[7/8] cmd.exe /C "cd /D C:\Users\KPC\Documents\programs\rtos\gatt_server\build\esp-idf\esptool_py && C:\Users\KPC\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/KPC/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/KPC/Documents/programs/rtos/gatt_server/build/partition_table/partition-table.bin C:/Users/KPC/Documents/programs/rtos/gatt_server/build/gatt_server.bin"
+gatt_server.bin binary size 0xc6390 bytes. Smallest app partition is 0x100000 bytes. 0x39c70 bytes (23%) free.
+[7/8] cmd.exe /C "cd /D C:\Users\KPC\esp\v5.2.1\esp-idf\components\esptool_py && C:\Users\KPC\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/KPC/esp/v5.2.1/esp-idf -D SERIAL_TOOL=C:/Users/KPC/.espressif/python_env/idf5.2_py3.esptool.py --chip esp32 -p COM9 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 gatt_server.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM9
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b0:a7:32:2a:c3:a0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000d6fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16359...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16359 compressed) at 0x00001000 in 0.6 seconds (effective 340.5 kbit/s)...
+Hash of data verified.
+Compressed 811920 bytes to 463711...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001f580... (6 %)
+Writing at 0x0002cf0d... (10 %)
+Writing at 0x00039fa8... (13 %)
+Writing at 0x0003fb64... (17 %)
+Writing at 0x000456ce... (20 %)
+Writing at 0x0004b6a2... (24 %)
+Writing at 0x000511e1... (27 %)
+Writing at 0x00056d6e... (31 %)
+Writing at 0x0005c7cc... (34 %)
+Writing at 0x00062317... (37 %)
+Writing at 0x00068d33... (41 %)
+Writing at 0x0006ed9d... (44 %)
+Writing at 0x00075042... (48 %)
+Writing at 0x0007b17b... (51 %)
+Writing at 0x00080f72... (55 %)
+Writing at 0x0008747f... (58 %)
+Writing at 0x0008d324... (62 %)
+Writing at 0x00092dc2... (65 %)
+Writing at 0x000989d8... (68 %)
+Writing at 0x0009e90c... (72 %)
+Writing at 0x000a4ce2... (75 %)
+Writing at 0x000aaaef... (79 %)
+Writing at 0x000b1623... (82 %)
+Writing at 0x000bb222... (86 %)
+Writing at 0x000c290a... (89 %)
+Writing at 0x000c81d3... (93 %)
+Writing at 0x000ce0aa... (96 %)
+Writing at 0x000d43c0... (100 %)
+Wrote 811920 bytes (463711 compressed) at 0x00010000 in 12.6 seconds (effective 516.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 276.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+11_env/Scripts/python.exe;;C:/Users/KPC/esp/v5.2.1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/KPC/Documents/programs/rtos/gatt_server/build -P C:/Users/KPC/esp/v5.2.1/esp-idf/components/esptool_py/run_serial_tool.cmake"

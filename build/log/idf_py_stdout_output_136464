@@ -1,0 +1,251 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SFAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+loa�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 15 2024 11:53:17[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24f60h (151392) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=00034f88 vaddr=3ffbdb60 size=04afch ( 19196) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00039a8c vaddr=40080000 size=0658ch ( 25996) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=84c18h (543768) map[0m
+[0;32mI (360) esp_image: segment 4: paddr=000c4c40 vaddr=4008658c size=13dcch ( 81356) load[0m
+[0;32mI (406) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (417) cpu_start: Multicore app[0m
+[0;32mI (426) cpu_start: Pro cpu start user code[0m
+[0;32mI (426) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (426) cpu_start: Application information:[0m
+[0;32mI (429) cpu_start: Project name:     gatt_server[0m
+[0;32mI (434) cpu_start: App version:      1[0m
+[0;32mI (439) cpu_start: Compile time:     Apr 15 2024 11:53:03[0m
+[0;32mI (445) cpu_start: ELF file SHA256:  d8983a918...[0m
+[0;32mI (450) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (455) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (460) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (465) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (470) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (483) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (489) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (495) heap_init: At 3FFC7260 len 00018DA0 (99 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (507) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 4009A358 len 00005CA8 (23 KiB): IRAM[0m
+[0;32mI (522) spi_flash: detected chip: generic[0m
+[0;32mI (525) spi_flash: flash io: dio[0m
+[0;33mW (529) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (542) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (553) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+[0;32mI (568) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (1568) mpu: Pitch: 2.582137 Roll: -2.080274[0m
+[0;32mI (2568) mpu: Pitch: 2.540207 Roll: -2.089473[0m
+[0;32mI (3568) mpu: Pitch: 2.545414 Roll: -2.111944[0m
+[0;32mI (4568) mpu: Pitch: 2.499176 Roll: -2.082030[0m
+[0;32mI (5568) mpu: Pitch: 2.529937 Roll: -2.109867[0m
+[0;32mI (6568) mpu: Pitch: 2.549936 Roll: -2.085525[0m
+[0;32mI (7568) mpu: Pitch: 2.544901 Roll: -2.084816[0m
+[0;32mI (8568) mpu: Pitch: 2.545835 Roll: -2.104546[0m
+[0;32mI (9568) mpu: Pitch: 2.553969 Roll: -2.094520[0m
+[0;32mI (10568) mpu: Pitch: 2.537016 Roll: -2.094667[0m
+[0;32mI (11568) mpu: Pitch: 2.528632 Roll: -2.090186[0m
+[0;32mI (12568) mpu: Pitch: 2.547866 Roll: -2.103187[0m
+[0;32mI (13568) mpu: Pitch: 2.538896 Roll: -2.089694[0m
+[0;32mI (14568) mpu: Pitch: 2.547573 Roll: -2.083292[0m
+[0;32mI (15568) mpu: Pitch: 2.547846 Roll: -2.097394[0m
+[0;32mI (16568) mpu: Pitch: 2.526756 Roll: -2.113233[0m
+[0;32mI (17568) mpu: Pitch: 2.538247 Roll: -2.076070[0m
+[0;32mI (18568) mpu: Pitch: 2.528263 Roll: -2.086391[0m
+[0;32mI (19568) mpu: Pitch: 2.536251 Roll: -2.073274[0m
+[0;32mI (20568) mpu: Pitch: 2.542821 Roll: -2.101199[0m
+[0;32mI (21568) mpu: Pitch: 2.513139 Roll: -2.084890[0m
+[0;32mI (22568) mpu: Pitch: 2.539856 Roll: -2.089123[0m
+[0;32mI (23568) mpu: Pitch: 2.574521 Roll: -2.085101[0m
+[0;32mI (24568) mpu: Pitch: 2.541716 Roll: -2.065401[0m
+[0;32mI (25568) mpu: Pitch: 2.511265 Roll: -2.089861[0m
+[0;32mI (26568) mpu: Pitch: 2.555820 Roll: -2.118736[0m
+[0;32mI (27568) mpu: Pitch: 2.553866 Roll: -2.085665[0m
+[0;32mI (28568) mpu: Pitch: 2.546488 Roll: -2.081277[0m
+[0;32mI (29568) mpu: Pitch: 2.550271 Roll: -2.099314[0m
+[0;32mI (30568) mpu: Pitch: 2.521056 Roll: -2.087347[0m
+[0;32mI (31568) mpu: Pitch: 2.556649 Roll: -2.106733[0m
+[0;32mI (32568) mpu: Pitch: 2.544006 Roll: -2.117196[0m
+[0;32mI (33568) mpu: Pitch: 2.547178 Roll: -2.093555[0m
+[0;32mI (34568) mpu: Pitch: 2.523767 Roll: -2.095460[0m
+[0;32mI (35568) mpu: Pitch: 2.543816 Roll: -2.095503[0m
+[0;32mI (36568) mpu: Pitch: 2.561367 Roll: -2.077995[0m
+[0;32mI (37568) mpu: Pitch: 2.569134 Roll: -1.880417[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 15 2024 11:53:17[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24f60h (151392) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=00034f88 vaddr=3ffbdb60 size=04afch ( 19196) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00039a8c vaddr=40080000 size=0658ch ( 25996) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=84c18h (543768) map[0m
+[0;32mI (360) esp_image: segment 4: paddr=000c4c40 vaddr=4008658c size=13dcch ( 81356) load[0m
+[0;32mI (406) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (417) cpu_start: Multicore app[0m
+[0;32mI (426) cpu_start: Pro cpu start user code[0m
+[0;32mI (426) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (426) cpu_start: Application information:[0m
+[0;32mI (429) cpu_start: Project name:     gatt_server[0m
+[0;32mI (434) cpu_start: App version:      1[0m
+[0;32mI (439) cpu_start: Compile time:     Apr 15 2024 11:53:03[0m
+[0;32mI (445) cpu_start: ELF file SHA256:  d8983a918...[0m
+[0;32mI (450) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (455) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (460) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (465) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (470) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (483) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (489) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (495) heap_init: At 3FFC7260 len 00018DA0 (99 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (507) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 4009A358 len 00005CA8 (23 KiB): IRAM[0m
+[0;32mI (522) spi_flash: detected chip: generic[0m
+[0;32mI (525) spi_flash: flash io: dio[0m
+[0;33mW (529) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (542) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (553) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+[0;32mI (568) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (1568) mpu: Pitch: 2.614329 Roll: -1.861149[0m
+[0;32mI (2568) mpu: Pitch: 2.535665 Roll: -1.931552[0m
+[0;32mI (3568) mpu: Pitch: 2.531193 Roll: -1.994135[0m
+[0;32mI (4568) mpu: Pitch: 2.544694 Roll: -2.034572[0m
+[0;32mI (5568) mpu: Pitch: 2.514473 Roll: -2.044739[0m
+[0;32mI (6568) mpu: Pitch: 2.550853 Roll: -2.052716[0m
+[0;32mI (7568) mpu: Pitch: 2.524430 Roll: -2.038133[0m
+[0;32mI (8568) mpu: Pitch: 2.503333 Roll: -2.035604[0m
+[0;32mI (9568) mpu: Pitch: 2.499929 Roll: -2.052474[0m
+[0;32mI (10568) mpu: Pitch: 2.486847 Roll: -2.073370[0m
+[0;32mI (11568) mpu: Pitch: 2.527645 Roll: -2.022660[0m
+[0;32mI (12568) mpu: Pitch: 2.520497 Roll: -2.048306[0m
+[0;32mI (13568) mpu: Pitch: 2.500031 Roll: -2.055697[0m
+[0;32mI (14568) mpu: Pitch: 2.519369 Roll: -2.055638[0m
+[0;32mI (15568) mpu: Pitch: 2.509769 Roll: -2.032700[0m
+[0;32mI (16568) mpu: Pitch: 2.514300 Roll: -2.039543[0m
+[0;32mI (17568) mpu: Pitch: 2.530436 Roll: -2.068083[0m
+[0;32mI (18568) mpu: Pitch: 2.519716 Roll: -2.042287[0m
+[0;32mI (19568) mpu: Pitch: 2.537085 Roll: -2.045461[0m
+[0;32mI (20568) mpu: Pitch: 2.533246 Roll: -2.033495[0m
+[0;32mI (21568) mpu: Pitch: 2.548687 Roll: -2.061313[0m
+[0;32mI (22568) mpu: Pitch: 2.541599 Roll: -2.057639[0m
+[0;32mI (23568) mpu: Pitch: 2.492819 Roll: -2.051716[0m
+[0;32mI (24568) mpu: Pitch: 2.516669 Roll: -2.048854[0m
+[0;32mI (25568) mpu: Pitch: 2.503989 Roll: -2.059138[0m
+[0;32mI (26568) mpu: Pitch: 2.531470 Roll: -2.043810[0m
+[0;32mI (27568) mpu: Pitch: 2.506144 Roll: -2.057719[0m
+[0;32mI (28568) mpu: Pitch: 2.493641 Roll: -2.086321[0m
+[0;32mI (29568) mpu: Pitch: 2.527866 Roll: -2.070440[0m
+[0;32mI (30568) mpu: Pitch: 2.519773 Roll: -2.035631[0m
+[0;32mI (31568) mpu: Pitch: 2.487151 Roll: -2.055531[0m
+[0;32mI (32568) mpu: Pitch: 2.510088 Roll: -2.042579[0m
+[0;32mI (33568) mpu: Pitch: 2.534465 Roll: -2.063575[0m
+[0;32mI (34568) mpu: Pitch: 2.505917 Roll: -2.057249[0m
+[0;32mI (35568) mpu: Pitch: 2.499754 Roll: -2.059784[0m
+[0;32mI (36568) mpu: Pitch: 2.491874 Roll: -2.041621[0m
+[0;32mI (37568) mpu: Pitch: 2.480768 Roll: -2.055107[0m
+[0;32mI (38568) mpu: Pitch: 2.501881 Roll: -2.056594[0m
+[0;32mI (39568) mpu: Pitch: 2.508885 Roll: -2.084534[0m
+[0;32mI (40568) mpu: Pitch: 2.513597 Roll: -2.067301[0m
+[0;32mI (41568) mpu: Pitch: 2.516110 Roll: -2.076477[0m
+[0;32mI (42568) mpu: Pitch: 2.491357 Roll: -2.064489[0m
+[0;32mI (43568) mpu: Pitch: 2.511049 Roll: -2.067683[0m
+[0;32mI (44568) mpu: Pitch: 2.525068 Roll: -2.085822[0m
+[0;32mI (45568) mpu: Pitch: 2.502636 Roll: -2.049411[0m
+[0;32mI (46568) mpu: Pitch: 2.532302 Roll: -2.077136[0m
+[0;32mI (47568) mpu: Pitch: 2.503889 Roll: -2.066023[0m
+[0;32mI (48568) mpu: Pitch: 2.524112 Roll: -2.075866[0m
+[0;32mI (49568) mpu: Pitch: 2.493552 Roll: -2.062484[0m
+[0;32mI (50568) mpu: Pitch: 2.517273 Roll: -2.081899[0m
+[0;32mI (51568) mpu: Pitch: 2.541439 Roll: -2.053620[0m
+[0;32mI (52568) mpu: Pitch: 2.522766 Roll: -2.063788[0m
+[0;32mI (53568) mpu: Pitch: 2.522239 Roll: -2.064177[0m
+[0;32mI (54568) mpu: Pitch: 2.560093 Roll: -2.038048[0m
+[0;32mI (55568) mpu: Pitch: 2.549989 Roll: -2.060632[0m
+[0;32mI (56568) mpu: Pitch: 2.529548 Roll: -2.072709[0m
+[0;32mI (57568) mpu: Pitch: 2.500934 Roll: -2.064404[0m
+[0;32mI (58568) mpu: Pitch: 2.529910 Roll: -2.066880[0m
+[0;32mI (59568) mpu: Pitch: 2.511627 Roll: -2.076729[0m
+[0;32mI (60568) mpu: Pitch: 2.513112 Roll: -2.070276[0m
+[0;32mI (61568) mpu: Pitch: 2.513437 Roll: -2.074573[0m
+[0;32mI (62568) mpu: Pitch: 2.512122 Roll: -2.055645[0m
+[0;32mI (63568) mpu: Pitch: 2.494204 Roll: -2.062436[0m
+[0;32mI (64568) mpu: Pitch: 2.519684 Roll: -2.080136[0m
+[0;32mI (65568) mpu: Pitch: 2.509623 Roll: -2.072363[0m
+[0;32mI (66568) mpu: Pitch: 2.507657 Roll: -2.075383[0m
+[0;32mI (67568) mpu: Pitch: 2.516292 Roll: -2.069116[0m
+[0;32mI (68568) mpu: Pitch: 2.510174 Roll: -2.062366[0m
+[0;32mI (69568) mpu: Pitch: 2.521075 Roll: -2.091504[0m
+[0;32mI (70568) mpu: Pitch: 2.531097 Roll: -2.067469[0m
+[0;32mI (71568) mpu: Pitch: 2.512613 Roll: -2.050953[0m
+[0;32mI (72568) mpu: Pitch: 2.511781 Roll: -2.063614[0m
+[0;32mI (73568) mpu: Pitch: 2.516936 Roll: -2.069078[0m
+[0;32mI (74568) mpu: Pitch: 2.502770 Roll: -2.061694[0m
+[0;32mI (75568) mpu: Pitch: 2.520931 Roll: -2.052050[0m
+[0;32mI (76568) mpu: Pitch: 2.491480 Roll: -2.061319[0m
+[0;32mI (77568) mpu: Pitch: 2.518661 Roll: -2.067094[0m
+[0;32mI (78568) mpu: Pitch: 2.539061 Roll: -2.057682[0m
+[0;32mI (79568) mpu: Pitch: 2.517362 Roll: -2.049209[0m
+[0;32mI (80568) mpu: Pitch: 2.500765 Roll: -2.058861[0m
+[0;32mI (81568) mpu: Pitch: 2.530222 Roll: -2.060187[0m
+[0;32mI (82568) mpu: Pitch: 2.497274 Roll: -2.070906[0m
+[0;32mI (83568) mpu: Pitch: 2.503636 Roll: -2.065510[0m
+[0;32mI (84568) mpu: Pitch: 2.527292 Roll: -2.039611[0m
